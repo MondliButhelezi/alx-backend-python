@@ -25,6 +25,7 @@ def stream_users_in_batches(batch_size):
 
     cursor.close()
     connection.close()
+    return  # explicitly return None at the end, harmless
 
 
 def batch_processing(batch_size):
